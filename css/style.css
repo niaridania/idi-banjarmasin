@@ -1,0 +1,754 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #a12c2f;
+    --color-primary-1: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #dd9626;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247,88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255,255,255,0.7);
+    --color-light-1: #e5e9f2;
+    --color-black: #03001C;
+    --color-bg: #f6f8fd;
+    --color-bg1: #181230;
+    --color-bg2: #FFC93C;
+    --color-bg3: #1f2641;
+
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 90%;
+
+    --transition: all 400ms ease;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: var(--color-black);
+    background: var(--color-bg);
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size:1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--color-black);
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-light {
+    background: var(--color-light-1);
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.btn-light:hover {
+    box-shadow: 5px 10px 20px 2px rgba(0, 0, 0, 0.050);
+    color: var(--color-black);
+}
+
+
+/* === NAVBAR ==== */
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+/* change navbar styles on scroll using javascript */
+.window-scroll {
+    /* efect glassmorphin */
+    background: liner-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.));
+    backdrop-filter: blur(2rem);
+    /* background: var(--color-white); */
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+}
+
+.nav__menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav__menu a:hover {
+    color: var(--color-primary);
+}
+
+.nav__menu li {
+    position: relative;
+}
+
+.nav__menu li:hover .dropdown {
+    display: block;
+}
+
+/* Dropdown styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-white);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: max-content; /* Menyesuaikan dengan panjang teks */
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    overflow: hidden; /* Tambahkan ini untuk memastikan hover sesuai dengan border-radius */
+}
+
+.nav__menu li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown a {
+    color: var(--color-black);
+    padding: 1rem 1.5rem;
+    display: block;
+    transition: var(--transition);
+    font-size: 1rem;
+    text-align: left;
+}
+
+/* Efek hover yang menyesuaikan dengan border-radius */
+.dropdown a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem 1.5rem; /* Konsisten dengan padding elemen dropdown */
+    border-radius: 0; /* Tetap nol karena border-radius mengikuti elemen parent */
+}
+
+/* === HEADER === */
+header {
+    position: relative;
+    top: 8rem;
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 12rem;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    gap: 5rem;
+    height: auto;
+}
+
+.header__left p {
+    margin: 1rem 0 2.4rem;
+}
+
+.header__right-image img {
+     /* filter: drop-shadow(1rem 1rem 0.8rem rgba(0,0,0,0.1)); */
+     margin-bottom: 2rem;
+}
+
+/* === CATEGORIES / PERSYARATAN === */
+.categories {
+    background-color: var(--color-white);
+    height: fit-content;
+}
+
+.categories h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+    color: var(--color-black);
+}
+
+.categories__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.categories__left {
+    margin-right: 4rem;
+}
+
+.categories__left p {
+    margin: 1rem 0 3rem;
+    color: var(--color-black);
+}
+
+.categories__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.category {
+    background: var(--color-primary);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+    color: var(--color-white);
+}
+
+.category:hover {
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.category__icon {
+    background: var(--color-warning);
+    color: var(--color-black);
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+}
+
+.category h5 {
+    margin: 2rem 0 1rem;
+}
+
+.category p {
+    font-size: 0.85rem;
+}
+
+/* === COURSES / PENDIDIKAN PPA === */
+.courses {
+    margin-top: 2rem;
+}
+
+.courses__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course {
+    background: var(--color-white);
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.course:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.course__image {
+    padding: 1.5rem;
+}
+
+.course__image img {
+    border-radius: 1rem;
+    /* width: 400px;
+    height: 250px; */
+}
+
+.course__info {
+    padding: 2rem;
+}
+
+.course__info p {
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+    word-spacing: -2px;
+}
+
+/* === FAQS === */
+.faqs {
+    background: var(--color-white);
+    /* box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5); */
+}
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-primary);
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.faq h4 {
+    font-size: 1rem;
+    line-height: 2.2;
+}
+
+.faq__icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    color: var(--color-warning);
+}
+
+.faq p {
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.faq.open p {
+    display: block;
+}
+
+/* === TESTIMONIALS === */
+.testimonials__container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.testimonial {
+    padding-top: 2rem;
+}
+
+.avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--color-white);
+}
+
+.testimonial__info {
+    text-align: center;
+}
+
+.testimonial__body {
+    background: var(--color-white);
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    /* transition: var(--transition); */
+}
+
+/* .testimonial__body:hover {
+    background: var(--color-primary);
+    border-color: transparent;
+    color: var(--color-white);
+} */
+
+/* === FOOTER === */
+footer {
+    background: var(--color-bg1);
+    padding-top: 5rem;
+    font-size: 0.9rem;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+
+.footer__container > div h4 {
+    color: var(--color-white);
+    margin-bottom: 1.2rem;
+}
+
+.footer__1 p {
+    color: var(--color-white);
+    margin: 0 0 2rem;
+}
+
+.footer__4 > div p {
+    color: var(--color-white);
+}
+
+footer ul li {
+    margin-bottom: 0.7rem;
+}
+
+footer ul li a {
+    color: var(--color-white);
+}
+
+footer ul li a:hover {
+    color: var(--color-warning)
+}
+
+.footer__socials {
+    display: flex;
+    gap: 1 rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer__copyright {
+    color: var(--color-white);
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--color-light);
+}
+
+/* === MEDIA QUERIES (TABLETS) === */
+@media screen and (max-width: 1024px) {
+    
+    .container {
+        width: var(--container-width-md);
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+    
+
+    nav button {
+        position: relative; /* Atur posisi tombol agar z-index berfungsi */
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-black);
+        cursor: pointer;
+        z-index: 1000; /* Pastikan tombol berada di atas menu navigasi */
+    }
+    
+    nav button#close-menu-btn {
+        display: none; /* Tombol tutup menu */
+    }
+    
+    /* Menu navigasi utama */
+    .nav__menu {
+        position: fixed; /* Tetap fixed agar tidak hilang saat scroll */
+        top: 0rem;
+        right: 0;
+        width: 18rem;
+        height: calc(100vh);
+        background: var(--color-white);
+        backdrop-filter: blur(10px); /* Blur untuk glassmorphism */
+        -webkit-backdrop-filter: blur(10px); /* Blur untuk browser berbasis WebKit */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Border semi-transparan */
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Shadow untuk memperkuat efek kaca */
+        border-radius: 60px 0 0 0;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0.2rem;
+        z-index: 999;
+        overflow-y: auto; /* Pastikan dropdown bisa di-scroll jika isinya melebihi ketinggian layar */
+    }
+
+    .nav__menu li {
+        position: relative; /* Pastikan posisi relatif untuk dropdown */
+        top: 2rem;
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+    }
+
+    .nav__menu a {
+        color: var(--color-black);
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        display: block;
+        transition: color 0.3s ease, background 0.3s ease;
+        border-radius: 8px; /* Agar hover menyesuaikan dengan border-radius */
+    }
+
+    /* Hover effect */
+    .nav__menu a:hover {
+        color: var(--color-primary);
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* === HEADER === */
+    header {
+        height: auto;
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    /* Dropdown styling */
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--color-white);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        width: max-content; /* Menyesuaikan dengan panjang teks */
+        border-radius: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        overflow: hidden; /* Tambahkan ini untuk memastikan hover sesuai dengan border-radius */
+    }
+
+    /* Menampilkan dropdown saat hover */
+    .nav__menu li:hover .dropdown {
+        display: block; /* Pastikan dropdown tampil */
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* Styling link dalam dropdown */
+    .dropdown a {
+        color: var(--color-black);
+        padding: 1rem 1.5rem;
+        display: block;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    /* Efek hover pada link dalam dropdown */
+    .dropdown a:hover {
+        color: var(--color-primary);
+        border-radius: 20px; /* Menyesuaikan dengan border-radius dropdown */
+    }
+
+    /* === CATEGORIES / PERSYARATAN === */
+    .categories {
+        height: auto;
+    }
+
+    .categories__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .categories__left {
+        margin-right: 0;
+    }
+
+    /* === COURSES / PENDIDIKAN PPA === */
+    .courses {
+        margin-top: 0;
+    }
+
+    .courses__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* === FAQs === */
+    .faqs__container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq {
+        padding: 1.5rem;
+    }
+
+    /* === FOOTER === */
+    .footer__container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* === MEDIA QUERIES (PHONES) === */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    .nav__menu {
+        right: 0;
+        width: 15rem;
+        height: 120vh;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .nav__menu li {
+        line-height: 0.5;
+    }
+
+    .nav__menu a {
+        color: var(--color-black);
+        font-size: 1rem;
+    }
+
+    /* === HEADER === */
+    header {
+        height: auto;
+    }
+
+    .header__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .header__left p {
+        margin-bottom: 1.3rem;
+    }
+    
+
+    /* === CATEGORIES === */
+    .categories__right {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .category {
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .category__icon {
+        margin-top: 4px;
+        display: inline-block;
+        border-radius: 1.2rem;
+    }
+
+    /* === PENDIDIKAN PPA === */
+    .courses__container {
+        grid-template-columns: 1fr;
+    }
+
+    /* === FAQs === */
+    .faq {
+        padding: 1.2rem;
+        border-radius: 1.5rem;
+    } 
+
+    .faq .question__answer {
+        font-size: 0.9rem;
+    }
+
+    .question__answer h4 {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    /* === FOOTER === */
+    .footer__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer__1 p {
+        margin: 1rem auto;
+    }
+
+    .footer__socials {
+        justify-content: center;
+    }
+}
