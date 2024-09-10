@@ -29,16 +29,35 @@
             <ul class="nav__menu">
                 <li><a href="index.php">Beranda</a></li>
                 <li>
-                    <a href="#">Tentang</a>
+                    <a href="#">Pelayanan</a>
                     <ul class="dropdown">
-                        <li><a href="tentang.php">Sejarah</a></li>
-                        <li><a href="#">Visi & Misi</a></li>
-                        <li><a href="#">Tim Kami</a></li>
+                        <li><a href="#">Rekomendasi SIP</a></li>
+                        <li><a href="#">Registrasi Anggota Baru / Ulang</a></li>
+                        <li><a href="#">Pengajuan Rekomendasi Masuk PPDS</a></li>
+                        <li><a href="#">Permohonan Mutasi Keluar IDI Cab. Banjarmasin</a></li>
                     </ul>
                 </li>
-                <li><a href="praktik.php">Praktik</a></li>
+                <li><a href="index.php">Kegiatan</a></li>
+                <li><a href="index.php">Berita</a></li>
+                <li><a href="index.php">Galeri</a></li>
+                <li>
+                    <a href="#">Berkas</a>
+                    <ul class="dropdown">
+                        <li><a href="tentang.php">Surat Keputusan</a></li>
+                        <li><a href="#">Surat Edaran</a></li>
+                        <li><a href="#">Buku dan Panduan</a></li>
+                        <li><a href="#">Peraturan Bidang Kesehatan</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Tentang</a>
+                    <ul class="dropdown">
+                        <li><a href="tentang.php">Profile IDI Cab. Banjarmasin</a></li>
+                        <li><a href="#">Sejarah Organisasi</a></li>
+                        <li><a href="#">Susunan Pengurus</a></li>
+                    </ul>
+                </li>
                 <li><a href="kontak.php">Kontak</a></li>
-                <!-- <li><a href="authentication.php"class="btn btn-light">Daftar</a></li> -->
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -66,44 +85,44 @@
         <div class="container categories__container">
             <div class="categories__left">
                 <h1>Pelayanan</h1>
-                <p>Sebelum Anda memulai proses pendaftaran, kami ingin memberikan himbauan penting untuk memastikan kelancaran proses tersebut. Pastikan Anda telah melengkapi semua berkas persyaratan dengan teliti dan akurat sebelum mengajukan pendaftaran</p>
+                <p>IDI Banjarmasin menyediakan pelayanan profesional dalam meningkatkan kompetensi dokter melalui pelatihan, seminar, dan konsultasi medis untuk mendukung kesehatan masyarakat.</p>
                 <a href="#" class="btn btn-light">Pelajari Selanjutnya</a>
             </div>
             <div class="categories__right">
                 <article class="category">
-                    <span class="category__icon"><i class="uil uil-registered"></i></span>
-                    <h5>Registrasi</h5>
-                    <p>Registrasi data diri lengkap sesuai form registrasi yang tersedia</p>
+                    <span class="category__icon"><i class="uil uil-file-check-alt"></i></span>
+                    <h5>Keanggotaan</h5>
+                    <p>Daftar menjadi anggota IDI Banjarmasin dengan mengisi form yang ada pada website.</p>
                 </article>
 
                 <article class="category">
                     <span class="category__icon"><i class="uil uil-file-bookmark-alt"></i></span>
-                    <h5>Sertifikat</h5>
-                    <p>Sertifikat pembekalan atau orientasi peserta didik di RS Utama</p>
+                    <h5>Izin Praktik</h5>
+                    <p>Rekomendasi Izin Praktik. pengajuan izin membuka tempat praktik dokter di banjarmasin</p>
                 </article>
 
                 <article class="category">
-                    <span class="category__icon"><i class="uil uil-file-check-alt"></i></span>
-                    <h5>STR</h5>
-                    <p>Surat Tanda Registrasi Peserta Didik<br>( khusus PPDS )</p>
-                </article>
-
-                <article class="category">
-                    <span class="category__icon"><i class="uil uil-file-medical-alt"></i></span>
-                    <h5>SIP</h5>
-                    <p>Surat Ijin Praktik Peserta Didik<br> (khusus PPDS)</p>
+                    <span class="category__icon"><i class="uil uil-registered"></i></span>
+                    <h5>KRIP</h5>
+                    <p>Pembekalan kompetensi dan serkom dokter</p>
                 </article>
 
                 <article class="category">
                     <span class="category__icon"><i class="uil uil-files-landscapes-alt"></i></span>
-                    <h5>Ijazah</h5>
-                    <p>Ijazah terakhir peserta didik <br> ( khusus PPDS )</p>
+                    <h5>STR</h5>
+                    <p>Surat Tanda Rekomendasi</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-file-medical-alt"></i></span>
+                    <h5>Kompetensi</h5>
+                    <p>Kompetensi Dokter</p>
                 </article>
 
                 <article class="category">
                     <span class="category__icon"><i class="uil uil-angle-double-right"></i></span>
-                    <h5>Lainnya</h5>
-                    <p>Mengikuti kegiatan praktik klinis sesuai peraturan yang berlaku</p>
+                    <h5>Studi Kasus</h5>
+                    <p>Berisikan forum terkait pelayanan IDI Banjarmasin</p>
                 </article>
             </div>
         </div>
@@ -122,7 +141,7 @@
                     <p>
                         Selama praktik coass, mahasiswa kedokteran yang disebut "co-assistant" atau "coass" akan terlibat langsung dalam pengelolaan pasien di bawah pengawasan langsung dari dokter dan tenaga medis berpengalaman.
                     </p>
-                    <a href="#" class="btn btn-primary">Pelajari</a>
+                    <a href="#" class="btn btn-light">Lihat Selengkapnya</a>
                 </div>
             </article>
 
@@ -135,7 +154,7 @@
                     <p>
                         Praktik Pendidikan Profesi Dokter Spesialis (PPDS) adalah program pascasarjana yang ditujukan untuk mahasiswa kedokteran yang ingin mengkhususkan diri dalam suatu bidang spesialisasi medis.
                     </p>
-                    <a href="#" class="btn btn-primary">Pelajari</a>
+                    <a href="#" class="btn btn-light">Lihat Selengkapnya</a>
                 </div>
             </article>
 
@@ -148,7 +167,7 @@
                     <p>
                         Program pendidikan tingkat lanjut untuk tenaga medis setelah menyelesaikan pendidikan dasar di bidang masing-masing, dengan tujuan menghasilkan tenaga profesional yang kompeten dan berkualitas.
                     </p>
-                    <a href="#" class="btn btn-light">Pelajari</a>
+                    <a href="#" class="btn btn-light">Lihat Selengkapnya</a>
                 </div>
             </article>
         </div>
@@ -329,9 +348,9 @@
     <footer>
         <div class="container footer__container">
             <div class="footer__1">
-                <a href="index.php" class="footer__logo"><h4>RSMAS</h4></a>
+                <a href="index.php" class="footer__logo"><h4>IDI BANJARMASIN</h4></a>
                 <p>
-                    Jl. Brig Jend. Hasan Basri No. 1, Alalak Utara, Kec. Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan 70125
+                    Jl. Brig Jend. Hasan Basri No. 9, Pangeran, Kec. Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan 70123
                 </p>
             </div>
 
@@ -357,8 +376,8 @@
             <div class="footer__4">
                 <h4>Contact Us</h4>
                 <div>
-                    <p>(0511) 92392392</p>
-                    <p>diklitbangrsmas@gmail.com</p>
+                    <p>(0811) 515-876</p>
+                    <p>cabangbanjarmasinidi@gmail.com</p>
                 </div>
 
                 <ul class="footer__socials">
@@ -378,7 +397,7 @@
             </div>
         </div>
         <div class="footer__copyright">
-            <small>Copyright &copy; Instalasi IT/PDE RSUD dr. H. Moch. Ansari Saleh</small>
+            <small>Copyright &copy; Codesign</small>
         </div>
     </footer>
 

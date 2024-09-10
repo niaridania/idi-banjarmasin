@@ -152,12 +152,12 @@ nav button {
 .nav__menu {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
     position: relative;
 }
 
 .nav__menu a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     transition: var(--transition);
 }
@@ -200,10 +200,10 @@ nav button {
 
 .dropdown a {
     color: var(--color-black);
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     display: block;
     transition: var(--transition);
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: left;
 }
 
@@ -211,7 +211,7 @@ nav button {
 .dropdown a:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
-    padding: 1rem 1.5rem; /* Konsisten dengan padding elemen dropdown */
+    padding: 0.8rem 1.2rem; /* Konsisten dengan padding elemen dropdown */
     border-radius: 0; /* Tetap nol karena border-radius mengikuti elemen parent */
 }
 
@@ -526,7 +526,7 @@ footer ul li a:hover {
         position: fixed; /* Tetap fixed agar tidak hilang saat scroll */
         top: 0rem;
         right: 0;
-        width: 18rem;
+        width: calc(100vw);
         height: calc(100vh);
         background: var(--color-white);
         backdrop-filter: blur(10px); /* Blur untuk glassmorphism */
@@ -544,15 +544,15 @@ footer ul li a:hover {
     }
 
     .nav__menu li {
-        position: relative; /* Pastikan posisi relatif untuk dropdown */
         top: 2rem;
+        position: relative; /* Pastikan posisi relatif untuk dropdown */
         margin-top: 0.5rem;
         margin-left: 2rem;
     }
 
     .nav__menu a {
         color: var(--color-black);
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         padding: 0.5rem 1rem;
         display: block;
         transition: color 0.3s ease, background 0.3s ease;
@@ -607,7 +607,7 @@ footer ul li a:hover {
     /* Styling link dalam dropdown */
     .dropdown a {
         color: var(--color-black);
-        padding: 1rem 1.5rem;
+        padding: 0.5rem 1rem;
         display: block;
         transition: background-color 0.3s ease, color 0.3s ease;
         font-size: 1rem;
@@ -617,6 +617,7 @@ footer ul li a:hover {
     /* Efek hover pada link dalam dropdown */
     .dropdown a:hover {
         color: var(--color-primary);
+        padding: 0.5rem 1rem;
         border-radius: 20px; /* Menyesuaikan dengan border-radius dropdown */
     }
 
