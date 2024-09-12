@@ -91,6 +91,18 @@ img {
     object-fit: cover;
 }
 
+.logo-container {
+    display: flex;          /* Mengatur elemen agar berjejer horizontal */
+    align-items: center;    /* Menjaga keselarasan vertikal antara gambar dan teks */
+    text-decoration: none;  /* Menghilangkan garis bawah pada tautan */
+}
+
+.logo {
+    width: 30px;            /* Sesuaikan ukuran gambar */
+    height: auto;           /* Menjaga proporsi gambar */
+    margin-right: 10px;     /* Beri jarak antara gambar dan teks */
+}
+
 .btn {
     display: inline-block;
     background: var(--color-black);
@@ -342,9 +354,18 @@ header {
 .course__info p {
     margin: 1.2rem 0 2rem;
     font-size: 0.9rem;
-    text-align: center;
+    text-align: left;
     word-spacing: -2px;
 }
+
+.course__info h4 {
+    text-align: left;
+}
+
+.course__info a:hover {
+    color: var(--color-primary);
+}
+
 
 /* === FAQS === */
 .faqs {

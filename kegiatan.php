@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISDIKNIS V3.1</title>
+    <title>IDI Cab. Banjarmasin</title>
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/tentang.css">
@@ -27,15 +27,42 @@
 <body>
     <nav>
         <div class="container nav__container">
-            <a href="../index.php">
-                <h4>RSMAS</h4>
+            <a href="index.php" class="logo-container">
+                <img src="images/logo-icon.png" alt="Logo" class="logo">
+                <h4>IDI BANJARMASIN</h4>
             </a>
             <ul class="nav__menu">
-                <li><a href="../index.php">Beranda</a></li>
-                <li><a href="tentang.php">Tentang</a></li>
-                <li><a href="praktik.php">Praktik</a></li>
+                <li><a href="index.php">Beranda</a></li>
+                <li>
+                    <a href="#">Pelayanan</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Rekomendasi SIP</a></li>
+                        <li><a href="#">Registrasi Anggota Baru / Ulang</a></li>
+                        <li><a href="#">Pengajuan Rekomendasi Masuk PPDS</a></li>
+                        <li><a href="#">Permohonan Mutasi Keluar IDI Cab. Banjarmasin</a></li>
+                    </ul>
+                </li>
+                <li><a href="kegiatan.php">Kegiatan</a></li>
+                <li><a href="berita.php">Berita</a></li>
+                <li><a href="galeri.php">Galeri</a></li>
+                <li>
+                    <a href="#">Berkas</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Surat Keputusan</a></li>
+                        <li><a href="#">Surat Edaran</a></li>
+                        <li><a href="#">Buku dan Panduan</a></li>
+                        <li><a href="#">Peraturan Bidang Kesehatan</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Tentang</a>
+                    <ul class="dropdown">
+                        <li><a href="tentang.php">Profile IDI Cab. Banjarmasin</a></li>
+                        <li><a href="#">Sejarah Organisasi</a></li>
+                        <li><a href="#">Susunan Pengurus</a></li>
+                    </ul>
+                </li>
                 <li><a href="kontak.php">Kontak</a></li>
-                <li><a href="../authentication.php"class="btn btn-light">Masuk</a></li>
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -50,11 +77,12 @@
                     <img src="./images/coass-1.jpg" loading="lazy">
                 </div>
                 <div class="course__info">
-                    <h4>Pendidikan Coass</h4>
+                    <a href="#">
+                        <h4>Epidemi Global dan Tantangan Kesehatan Masyarakat</h4>
+                    </a>
                     <p>
-                        Selama praktik coass, mahasiswa kedokteran yang disebut "co-assistant" atau "coass" akan terlibat langsung dalam pengelolaan pasien di bawah pengawasan langsung dari dokter dan tenaga medis berpengalaman.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
                     </p>
-                    <a href="#" class="btn btn-primary">Pelajari</a>
                 </div>
             </article>
 
@@ -63,11 +91,12 @@
                     <img src="./images/ppds-1.jpg" loading="lazy">
                 </div>
                 <div class="course__info">
-                    <h4>Pendidikan PPDS</h4>
+                    <a href="#">
+                        <h4>Donor Darah Rutin Dokter Indonesia</h4>
+                    </a>
                     <p>
-                        Praktik Pendidikan Profesi Dokter Spesialis (PPDS) adalah program pascasarjana yang ditujukan untuk mahasiswa kedokteran yang ingin mengkhususkan diri dalam suatu bidang spesialisasi medis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, atque tempore magnam tempora voluptas cum impedit laudantium earum amet porro nostrum, recusandae quas vero itaque rerum aliquam optio voluptates totam.    
                     </p>
-                    <a href="#" class="btn btn-primary">Pelajari</a>
                 </div>
             </article>
 
@@ -76,11 +105,12 @@
                     <img src="./images/ppa-1.jpg" loading="lazy">
                 </div>
                 <div class="course__info">
-                    <h4>Pendidikan PPA Lainnya</h4>
+                    <a href="#">
+                        <h4>Dampak Polusi pada Kesehatan</h4>
+                    </a>
                     <p>
-                        Program pendidikan tingkat lanjut untuk tenaga medis setelah menyelesaikan pendidikan dasar di bidang masing-masing, dengan tujuan menghasilkan tenaga profesional yang kompeten dan berkualitas.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus reiciendis, libero, quod facilis sed amet temporibus saepe aut aperiam maxime aspernatur, dolorum omnis inventore veritatis. Sit quas voluptatibus numquam quaerat.
                     </p>
-                    <a href="#" class="btn btn-light">Pelajari</a>
                 </div>
             </article>
         </div>
@@ -91,25 +121,22 @@
     <footer>
         <div class="container footer__container">
             <div class="footer__1">
-                <a href="../index.php" class="footer__logo">
-                    <h4>RSMAS</h4>
-                </a>
+                <a href="index.php" class="footer__logo"><h4>IDI BANJARMASIN</h4></a>
                 <p>
-                    Jl. Brig Jend. Hasan Basri No. 1, Alalak Utara, Kec. Banjarmasin Utara, Kota Banjarmasin, Kalimantan
-                    Selatan 70125
+                    Jl. Brig Jend. Hasan Basri No. 9, Pangeran, Kec. Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan 70123
                 </p>
             </div>
-    
+
             <div class="footer__2">
                 <h4>Permalinks</h4>
                 <ul class="permalinks">
-                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="tentang.php">Tentang</a></li>
-                    <li><a href="praktik.php">Praktik</a></li>
+                    <li><a href="berita.php">Berita</a></li>
                     <li><a href="kontak.php">Kontak</a></li>
                 </ul>
             </div>
-    
+
             <div class="footer__3">
                 <h4>Primacy</h4>
                 <ul class="privacy">
@@ -118,14 +145,14 @@
                     <li><a href="#">Refund Policy</a></li>
                 </ul>
             </div>
-    
+
             <div class="footer__4">
                 <h4>Contact Us</h4>
                 <div>
-                    <p>(0511) 92392392</p>
-                    <p>diklitbangrsmas@gmail.com</p>
+                    <p>(0811) 515-876</p>
+                    <p>cabangbanjarmasinidi@gmail.com</p>
                 </div>
-    
+
                 <ul class="footer__socials">
                     <li>
                         <a href="#"><i class="uil uil-facebook"></i></a>
@@ -143,10 +170,10 @@
             </div>
         </div>
         <div class="footer__copyright">
-            <small>Copyright &copy; Instalasi IT/PDE RSUD dr. H. Moch. Ansari Saleh</small>
+            <small>Copyright &copy; Codesign</small>
         </div>
     </footer>
     
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

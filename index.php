@@ -25,7 +25,10 @@
 <body>
     <nav>
         <div class="container nav__container">
-            <a href="index.php"><h4>IDI BANJARMASIN </h4></a>
+            <a href="index.php" class="logo-container">
+                <img src="images/logo-icon.png" alt="Logo" class="logo">
+                <h4>IDI BANJARMASIN</h4>
+            </a>
             <ul class="nav__menu">
                 <li><a href="index.php">Beranda</a></li>
                 <li>
@@ -37,13 +40,13 @@
                         <li><a href="#">Permohonan Mutasi Keluar IDI Cab. Banjarmasin</a></li>
                     </ul>
                 </li>
-                <li><a href="index.php">Kegiatan</a></li>
-                <li><a href="index.php">Berita</a></li>
-                <li><a href="index.php">Galeri</a></li>
+                <li><a href="kegiatan.php">Kegiatan</a></li>
+                <li><a href="berita.php">Berita</a></li>
+                <li><a href="galeri.php">Galeri</a></li>
                 <li>
                     <a href="#">Berkas</a>
                     <ul class="dropdown">
-                        <li><a href="tentang.php">Surat Keputusan</a></li>
+                        <li><a href="#">Surat Keputusan</a></li>
                         <li><a href="#">Surat Edaran</a></li>
                         <li><a href="#">Buku dan Panduan</a></li>
                         <li><a href="#">Peraturan Bidang Kesehatan</a></li>
@@ -69,8 +72,8 @@
         <div class="container header__container">
             <div class="header__left">
                 <h1>Ikatan Dokter Indonesia Cab. Banjarmasin</h1>
-                <p>Halo, para peserta didik praktik. Selamat datang di RSUD dr. H. Moch. Ansari Saleh Banjarmasin! Bersiaplah untuk melampaui batasan dan berkembang bersama kami di tempat di mana praktik klinis dipertemukan dengan dedikasi tinggi. Bersama tim medis berpengalaman, kalian akan mendapatkan kesempatan untuk belajar dan mengasah keterampilan dalam perawatan kesehatan, merasakan atmosfer profesionalisme dan dedikasi dalam memberikan layanan kesehatan berkualitas bagi masyarakat sekitar. </p>
-                <a href="authentication.php" class="btn btn-primary">Daftar Anggota</a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum voluptatem dolore nemo eos ratione cupiditate totam quaerat error soluta tempore dicta accusantium ullam nam dolorem, dolor facere nostrum aliquid aspernatur recusandae. Fuga, non porro? Iusto numquam commodi repellendus at ad.</p>
+                <a href="#" class="btn btn-primary">Daftar Anggota</a>
             </div>
             <div class="header__right">
                 <div class="header__right-image">
@@ -134,40 +137,43 @@
         <div class="container courses__container">
             <article class="course">
                 <div class="course__image">
-                    <img src="images/coass-1.jpg" loading="lazy">
+                    <img src="./images/coass-1.jpg" loading="lazy">
                 </div>
                 <div class="course__info">
-                    <h4>Pendidikan Coass</h4>
+                    <a href="#">
+                        <h4>Epidemi Global dan Tantangan Kesehatan Masyarakat</h4>
+                    </a>
                     <p>
-                        Selama praktik coass, mahasiswa kedokteran yang disebut "co-assistant" atau "coass" akan terlibat langsung dalam pengelolaan pasien di bawah pengawasan langsung dari dokter dan tenaga medis berpengalaman.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
                     </p>
-                    <a href="#" class="btn btn-light">Lihat Selengkapnya</a>
                 </div>
             </article>
 
             <article class="course">
                 <div class="course__image">
-                    <img src="images/ppds-1.jpg" loading="lazy">
+                    <img src="./images/ppds-1.jpg" loading="lazy">
                 </div>
                 <div class="course__info">
-                    <h4>Pendidikan PPDS</h4>
+                    <a href="#">
+                        <h4>Donor Darah Rutin Dokter Indonesia</h4>
+                    </a>
                     <p>
-                        Praktik Pendidikan Profesi Dokter Spesialis (PPDS) adalah program pascasarjana yang ditujukan untuk mahasiswa kedokteran yang ingin mengkhususkan diri dalam suatu bidang spesialisasi medis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, atque tempore magnam tempora voluptas cum impedit laudantium earum amet porro nostrum, recusandae quas vero itaque rerum aliquam optio voluptates totam.    
                     </p>
-                    <a href="#" class="btn btn-light">Lihat Selengkapnya</a>
                 </div>
             </article>
 
             <article class="course">
                 <div class="course__image">
-                    <img src="images/ppa-1.jpg" loading="lazy">
+                    <img src="./images/ppa-1.jpg" loading="lazy">
                 </div>
                 <div class="course__info">
-                    <h4>Pendidikan PPA Lainnya</h4>
+                    <a href="#">
+                        <h4>Dampak Polusi pada Kesehatan</h4>
+                    </a>
                     <p>
-                        Program pendidikan tingkat lanjut untuk tenaga medis setelah menyelesaikan pendidikan dasar di bidang masing-masing, dengan tujuan menghasilkan tenaga profesional yang kompeten dan berkualitas.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus reiciendis, libero, quod facilis sed amet temporibus saepe aut aperiam maxime aspernatur, dolorum omnis inventore veritatis. Sit quas voluptatibus numquam quaerat.
                     </p>
-                    <a href="#" class="btn btn-light">Lihat Selengkapnya</a>
                 </div>
             </article>
         </div>
@@ -359,7 +365,7 @@
                 <ul class="permalinks">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="tentang.php">Tentang</a></li>
-                    <li><a href="praktik.php">Praktik</a></li>
+                    <li><a href="berita.php">Berita</a></li>
                     <li><a href="kontak.php">Kontak</a></li>
                 </ul>
             </div>
