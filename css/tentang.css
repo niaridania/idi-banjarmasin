@@ -9,6 +9,21 @@
     gap: 5rem;
 }
 
+.about__history {
+    background: var(--color-white);
+    margin-top: 3rem;
+}
+
+.about__history-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.about__history p {
+    margin: 0rem;
+}
+
 .about__achievements-right > p {
     margin: 1.6rem 0 2.5rem;
 }
@@ -54,12 +69,17 @@
 
 /* === TEAM === */
 .team {
-    background: var(--color-white);
+    /* background: transparent; */
+}
+
+.galery {
+    /* background: transparent; */
+    margin-top: 2rem;
 }
 
 .team__container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 

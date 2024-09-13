@@ -52,14 +52,7 @@
                         <li><a href="#">Peraturan Bidang Kesehatan</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#">Tentang</a>
-                    <ul class="dropdown">
-                        <li><a href="tentang.php">Profile IDI Cab. Banjarmasin</a></li>
-                        <li><a href="#">Sejarah Organisasi</a></li>
-                        <li><a href="#">Susunan Pengurus</a></li>
-                    </ul>
-                </li>
+                <li><a href="tentang.php">Tentang</a></li>
                 <li><a href="kontak.php">Kontak</a></li>
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -71,7 +64,7 @@
     <header>
         <div class="container header__container">
             <div class="header__left">
-                <h1>Ikatan Dokter Indonesia Cab. Banjarmasin</h1>
+                <h1>Organisasi Profesi Ikatan Dokter Indonesia Cabang Banjarmasin</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum voluptatem dolore nemo eos ratione cupiditate totam quaerat error soluta tempore dicta accusantium ullam nam dolorem, dolor facere nostrum aliquid aspernatur recusandae. Fuga, non porro? Iusto numquam commodi repellendus at ad.</p>
                 <a href="#" class="btn btn-primary">Daftar Anggota</a>
             </div>
@@ -95,88 +88,113 @@
                 <article class="category">
                     <span class="category__icon"><i class="uil uil-file-check-alt"></i></span>
                     <h5>Keanggotaan</h5>
-                    <p>Daftar menjadi anggota IDI Banjarmasin dengan mengisi form yang ada pada website.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsam nam exercitationem ex? Eligendi, ex eveniet!</p>
                 </article>
 
                 <article class="category">
                     <span class="category__icon"><i class="uil uil-file-bookmark-alt"></i></span>
                     <h5>Izin Praktik</h5>
-                    <p>Rekomendasi Izin Praktik. pengajuan izin membuka tempat praktik dokter di banjarmasin</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium ex odit, unde quas sunt quisquam molestiae?</p>
                 </article>
 
                 <article class="category">
                     <span class="category__icon"><i class="uil uil-registered"></i></span>
                     <h5>KRIP</h5>
-                    <p>Pembekalan kompetensi dan serkom dokter</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum dolores nihil labore aliquam, praesentium corrupti.</p>
                 </article>
 
                 <article class="category">
                     <span class="category__icon"><i class="uil uil-files-landscapes-alt"></i></span>
                     <h5>STR</h5>
-                    <p>Surat Tanda Rekomendasi</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolore odio dignissimos, eaque alias dolores nobis.</p>
                 </article>
 
                 <article class="category">
                     <span class="category__icon"><i class="uil uil-file-medical-alt"></i></span>
                     <h5>Kompetensi</h5>
-                    <p>Kompetensi Dokter</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sapiente et quidem. Alias quidem magnam maxime?</p>
                 </article>
 
                 <article class="category">
                     <span class="category__icon"><i class="uil uil-angle-double-right"></i></span>
                     <h5>Studi Kasus</h5>
-                    <p>Berisikan forum terkait pelayanan IDI Banjarmasin</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odit assumenda quis sed nisi perspiciatis fuga!</p>
                 </article>
             </div>
         </div>
     </section>
     <!-- END OF CATEGORIES -->
 
-    <section class="courses">
+    
+    
+    <section class="container testimonials__container mySwiper">
         <h2>Kegiatan Terbaru</h2>
-        <div class="container courses__container">
-            <article class="course">
-                <div class="course__image">
-                    <img src="./images/coass-1.jpg" loading="lazy">
-                </div>
-                <div class="course__info">
-                    <a href="#">
-                        <h4>Epidemi Global dan Tantangan Kesehatan Masyarakat</h4>
-                    </a>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
-                    </p>
-                </div>
-            </article>
+        <div class="swiper-wrapper">
+                <article class="course swiper-slide">
+                    <div class="course__image">
+                        <img src="./images/coass-1.jpg" loading="lazy">
+                    </div>
+                    <div class="course__info">
+                        <p class="text-primary">KEGIATAN</p>
+                        <p class="text-muted">Publikasi 01-01-2024</p>
+                        <a href="#">
+                            <h4>Epidemi Global dan Tantangan Kesehatan Masyarakat</h4>
+                        </a>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
+                        </p>
+                    </div>
+                </article>
 
-            <article class="course">
-                <div class="course__image">
-                    <img src="./images/ppds-1.jpg" loading="lazy">
-                </div>
-                <div class="course__info">
-                    <a href="#">
-                        <h4>Donor Darah Rutin Dokter Indonesia</h4>
-                    </a>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, atque tempore magnam tempora voluptas cum impedit laudantium earum amet porro nostrum, recusandae quas vero itaque rerum aliquam optio voluptates totam.    
-                    </p>
-                </div>
-            </article>
+                <article class="course swiper-slide">
+                    <div class="course__image">
+                        <img src="./images/ppds-1.jpg" loading="lazy">
+                    </div>
+                    <div class="course__info">
+                        <p class="text-primary">KEGIATAN</p>
+                        <p class="text-muted">Publikasi 01-01-2024</p>
+                        <a href="#">
+                            <h4>Donor Darah Rutin Dokter Indonesia</h4>
+                        </a>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, atque tempore magnam tempora voluptas cum impedit laudantium earum amet porro nostrum, recusandae quas vero itaque rerum aliquam optio voluptates totam.    
+                        </p>
+                    </div>
+                </article>
 
-            <article class="course">
-                <div class="course__image">
-                    <img src="./images/ppa-1.jpg" loading="lazy">
-                </div>
-                <div class="course__info">
-                    <a href="#">
-                        <h4>Dampak Polusi pada Kesehatan</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus reiciendis, libero, quod facilis sed amet temporibus saepe aut aperiam maxime aspernatur, dolorum omnis inventore veritatis. Sit quas voluptatibus numquam quaerat.
-                    </p>
-                </div>
-            </article>
-        </div>
+                <article class="course swiper-slide">
+                    <div class="course__image">
+                        <img src="./images/ppa-1.jpg" loading="lazy">
+                    </div>
+                    <div class="course__info">
+                        <p class="text-primary">KEGIATAN</p>
+                        <p class="text-muted">Publikasi 01-01-2024</p>
+                        <a href="#">
+                            <h4>Dampak Polusi pada Kesehatan</h4>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus reiciendis, libero, quod facilis sed amet temporibus saepe aut aperiam maxime aspernatur, dolorum omnis inventore veritatis. Sit quas voluptatibus numquam quaerat.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="course swiper-slide">
+                    <div class="course__image">
+                        <img src="./images/coass-1.jpg" loading="lazy">
+                    </div>
+                    <div class="course__info">
+                        <p class="text-primary">KEGIATAN</p>
+                        <p class="text-muted">Publikasi 01-01-2024</p>
+                        <a href="#">
+                            <h4>Sosialisasi Kesehatan Kepada Masyarakat</h4>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus reiciendis, libero, quod facilis sed amet temporibus saepe aut aperiam maxime aspernatur, dolorum omnis inventore veritatis. Sit quas voluptatibus numquam quaerat.
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
     </section>
     <!-- END OF COURSE -->
 
@@ -247,102 +265,114 @@
     <section class="container testimonials__container mySwiper">
         <h2>Berita Terbaru</h2>
         <div class="swiper-wrapper">
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="images/avatar1.jpg" loading="lazy">
+            <article class="course swiper-slide">
+                <div class="course__image">
+                    <img src="./images/ppa-1.jpg" loading="lazy">
                 </div>
-                <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
-                    <small>Mahasiswa Coass</small>
-                </div>
-                <div class="testimonial__body">
+                <div class="course__info">
+                    <p class="text-primary">BERITA</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
+                    <a href="#">
+                        <h4>Peringatan Hari Tuberkulosis Sedunia</h4>
+                    </a>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ipsa id repellendus ad illum, debitis neque. Praesentium odit, repellendus perspiciatis quia velit ab laudantium consectetur magni, ullam nobis excepturi deserunt?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
+                    </p>
+                </div>
+            </article>
+            
+            <article class="course swiper-slide">
+                <div class="course__image">
+                    <img src="./images/coass-1.jpg" loading="lazy">
+                </div>
+                <div class="course__info">
+                    <p class="text-primary">BERITA</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
+                    <a href="#">
+                        <h4>Surat Edaran Pemutakhiran dan Verifikasi P2KB IDI Online</h4>
+                    </a>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
                     </p>
                 </div>
             </article>
 
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="images/avatar1.jpg" loading="lazy">
+            <article class="course swiper-slide">
+                <div class="course__image">
+                    <img src="./images/ppds-1.jpg" loading="lazy">
                 </div>
-                <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
-                    <small>Mahasiswa Coass</small>
-                </div>
-                <div class="testimonial__body">
+                <div class="course__info">
+                    <p class="text-primary">BERITA</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
+                    <a href="#">
+                        <h4>Panduan Penggunaan Aplikasi</h4>
+                    </a>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ipsa id repellendus ad illum, debitis
-                        neque. Praesentium odit, repellendus perspiciatis quia velit ab laudantium consectetur magni, ullam nobis
-                        excepturi deserunt?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
                     </p>
                 </div>
             </article>
 
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="images/avatar1.jpg" loading="lazy">
+            <article class="course swiper-slide">
+                <div class="course__image">
+                    <img src="./images/coass-1.jpg" loading="lazy">
                 </div>
-                <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
-                    <small>Mahasiswa Coass</small>
-                </div>
-                <div class="testimonial__body">
+                <div class="course__info">
+                    <p class="text-primary">BERITA</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
+                    <a href="#">
+                        <h4>Menyambut Hari Kanker Sedunia 2024</h4>
+                    </a>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ipsa id repellendus ad illum, debitis
-                        neque. Praesentium odit, repellendus perspiciatis quia velit ab laudantium consectetur magni, ullam nobis
-                        excepturi deserunt?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
                     </p>
                 </div>
             </article>
 
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="images/avatar1.jpg" loading="lazy">
+            <article class="course swiper-slide">
+                <div class="course__image">
+                    <img src="./images/ppa-1.jpg" loading="lazy">
                 </div>
-                <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
-                    <small>Mahasiswa Coass</small>
-                </div>
-                <div class="testimonial__body">
+                <div class="course__info">
+                    <p class="text-primary">BERITA</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
+                    <a href="#">
+                        <h4>Epidemi Global dan Tantangan Kesehatan Masyarakat</h4>
+                    </a>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ipsa id repellendus ad illum, debitis
-                        neque. Praesentium odit, repellendus perspiciatis quia velit ab laudantium consectetur magni, ullam nobis
-                        excepturi deserunt?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
                     </p>
                 </div>
             </article>
 
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="images/avatar1.jpg" loading="lazy">
+            <article class="course swiper-slide">
+                <div class="course__image">
+                    <img src="./images/ppds-1.jpg" loading="lazy">
                 </div>
-                <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
-                    <small>Mahasiswa Coass</small>
-                </div>
-                <div class="testimonial__body">
+                <div class="course__info">
+                    <p class="text-primary">BERITA</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
+                    <a href="#">
+                        <h4>Epidemi Global dan Tantangan Kesehatan Masyarakat</h4>
+                    </a>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ipsa id repellendus ad illum, debitis
-                        neque. Praesentium odit, repellendus perspiciatis quia velit ab laudantium consectetur magni, ullam nobis
-                        excepturi deserunt?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
                     </p>
                 </div>
             </article>
 
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="images/avatar1.jpg" loading="lazy">
+            <article class="course swiper-slide">
+                <div class="course__image">
+                    <img src="./images/coass-1.jpg" loading="lazy">
                 </div>
-                <div class="testimonial__info">
-                    <h5>Diana Ayi</h5>
-                    <small>Mahasiswa Coass</small>
-                </div>
-                <div class="testimonial__body">
+                <div class="course__info">
+                    <p class="text-primary">BERITA</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
+                    <a href="#">
+                        <h4>Epidemi Global dan Tantangan Kesehatan Masyarakat</h4>
+                    </a>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ipsa id repellendus ad illum, debitis
-                        neque. Praesentium odit, repellendus perspiciatis quia velit ab laudantium consectetur magni, ullam nobis
-                        excepturi deserunt?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
                     </p>
                 </div>
             </article>

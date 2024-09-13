@@ -61,61 +61,7 @@
     </nav>
     <!-- END OF NAVBAR -->
 
-    
-
-    <section class="about__achievements">
-        <div class="container about__achievements-container">
-            <div class="about__achievements-left">
-                <img src="./images/tentang-2.png" loading="lazy">
-            </div>
-            <div class="about__achievements-right">
-                <h1>Profil IDI Cab. Banjarmasin</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis distinctio tenetur dolorem repellat pariatur, neque beatae ex dolore ea enim, cupiditate ratione nobis ipsa et dolorum! Atque voluptatem temporibus ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis quasi, earum architecto doloribus minima laboriosam dolorem perspiciatis maiores corrupti repellendus voluptate aut quod ipsam numquam necessitatibus, cumque sequi nesciunt!   
-                </p>
-                <div class="achievements__cards">
-                    <article class="achievement__card">
-                        <span class="achievement__icon">
-                            <i class="uil uil-video"></i>
-                        </span>
-                        <h3>450+</h3>
-                        <p>Pelatihan</p>
-                    </article>
-
-                    <article class="achievement__card">
-                        <span class="achievement__icon">
-                            <i class="uil uil-users-alt"></i>
-                        </span>
-                        <h3>79,000+</h3>
-                        <p>Anggota</p>
-                    </article>
-
-                    <article class="achievement__card">
-                        <span class="achievement__icon">
-                            <i class="uil uil-trophy"></i>
-                        </span>
-                        <h3>26+</h3>
-                        <p>Penghargaan</p>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END OF ACHIEVEMENT -->
-
-    
-    <section class="about__history">
-        <div class="container about__history-container">
-            <h1>Sejarah Organisasi</h1>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis distinctio tenetur dolorem repellat pariatur, neque beatae ex dolore ea enim, cupiditate ratione nobis ipsa et dolorum! Atque voluptatem temporibus ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quis quasi, earum architecto doloribus minima laboriosam dolorem perspiciatis maiores corrupti repellendus voluptate aut quod ipsam numquam necessitatibus, cumque sequi nesciunt!   
-            </p>
-        </div>
-    </section>
-    <!-- END OF ACHIEVEMENT -->
-
-    <section class="team">
-        <h2>Susunan Pengurus</h2>
+    <section class="galery">
         <div class="container team__container">
             <article class="team__member">
                 <div class="team__member-image">
@@ -123,7 +69,7 @@
                 </div>
                 <div class="team__member-info">
                     <h4>dr. Anwari Halim, Sp. OG</h4>
-                    <p>Ketua Umum</p>
+                    <p>Kebidanan dan Penyakit Kandungan</p>
                 </div>
                 <div class="team__member-socials">
                     <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
@@ -138,7 +84,7 @@
                 </div>
                 <div class="team__member-info">
                     <h4>dr. Bill Harman, Sp. OG</h4>
-                    <p>Wakil Ketua Umum</p>
+                    <p>Kebidanan dan Penyakit Kandungan</p>
                 </div>
                 <div class="team__member-socials">
                     <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
@@ -153,7 +99,7 @@
                 </div>
                 <div class="team__member-info">
                     <h4>dr. Ayub M. Assa, Sp. OG(K)</h4>
-                    <p>Sekretaris</p>
+                    <p>Kebidanan dan Penyakit Kandungan</p>
                 </div>
                 <div class="team__member-socials">
                     <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
@@ -168,7 +114,7 @@
                 </div>
                 <div class="team__member-info">
                     <h4>dr. M. Anhar Dani, Sp. OG, M.Ked. Klin</h4>
-                    <p>Dewan Pertimbangan</p>
+                    <p>Kebidanan dan Penyakit Kandungan</p>
                 </div>
                 <div class="team__member-socials">
                     <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
@@ -183,7 +129,7 @@
                 </div>
                 <div class="team__member-info">
                     <h4>dr. Fellita Ratri Anggraeni, Sp. OG</h4>
-                    <p>Ketua Bidang Organisasi</p>
+                    <p>Kebidanan dan Penyakit Kandungan</p>
                 </div>
                 <div class="team__member-socials">
                     <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
@@ -198,7 +144,7 @@
                 </div>
                 <div class="team__member-info">
                     <h4>dr. Sintia Damayanti, Sp. OG</h4>
-                    <p>Ketua Bidang JKN</p>
+                    <p>Kebidanan dan Penyakit Kandungan</p>
                 </div>
                 <div class="team__member-socials">
                     <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
@@ -213,7 +159,7 @@
                 </div>
                 <div class="team__member-info">
                     <h4>dr. Winda Safiitri, Sp.THT-KL</h4>
-                    <p>Ketua Pembinaan Mental</p>
+                    <p>Penyakit Telinga Hidung Tenggorokan – Kerongkongan Leher (THTKL)</p>
                 </div>
                 <div class="team__member-socials">
                     <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
@@ -228,7 +174,7 @@
                 </div>
                 <div class="team__member-info">
                     <h4>dr. Hamita, Sp.THT-KL</h4>
-                    <p>Ketua Bidang Pengembangan</p>
+                    <p>Penyakit Telinga Hidung Tenggorokan – Kerongkongan Leher (THTKL)</p>
                 </div>
                 <div class="team__member-socials">
                     <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
@@ -243,7 +189,7 @@
                 </div>
                 <div class="team__member-info">
                     <h4>dr. Kasan Wongdjaja, Sp. PD, Finasim</h4>
-                    <p>Ketua Bidang Pengabdian Masyarakat</p>
+                    <p>Penyakit Dalam</p>
                 </div>
                 <div class="team__member-socials">
                     <a href="https://instagram.com" target="_blank"><i class="uil uil-instagram"></i></a>
@@ -258,7 +204,7 @@
                 </div>
                 <div class="team__member-info">
                     <h4>dr. Hj. Wiwit Agung SNC, Sp. PD (K)</h4>
-                    <p>Ketua Bidang Ilmiah</p>
+                    <p>Penyakit Dalam</p>
                 </div>
                 <div class="team__member-socials">
                     <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>

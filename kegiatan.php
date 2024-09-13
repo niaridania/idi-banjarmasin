@@ -54,14 +54,7 @@
                         <li><a href="#">Peraturan Bidang Kesehatan</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#">Tentang</a>
-                    <ul class="dropdown">
-                        <li><a href="tentang.php">Profile IDI Cab. Banjarmasin</a></li>
-                        <li><a href="#">Sejarah Organisasi</a></li>
-                        <li><a href="#">Susunan Pengurus</a></li>
-                    </ul>
-                </li>
+                <li><a href="tentang.php">Tentang</a></li>
                 <li><a href="kontak.php">Kontak</a></li>
             </ul>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -77,6 +70,8 @@
                     <img src="./images/coass-1.jpg" loading="lazy">
                 </div>
                 <div class="course__info">
+                    <p class="text-primary">KEGIATAN</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
                     <a href="#">
                         <h4>Epidemi Global dan Tantangan Kesehatan Masyarakat</h4>
                     </a>
@@ -91,11 +86,13 @@
                     <img src="./images/ppds-1.jpg" loading="lazy">
                 </div>
                 <div class="course__info">
+                    <p class="text-primary">KEGIATAN</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
                     <a href="#">
                         <h4>Donor Darah Rutin Dokter Indonesia</h4>
                     </a>
                     <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, atque tempore magnam tempora voluptas cum impedit laudantium earum amet porro nostrum, recusandae quas vero itaque rerum aliquam optio voluptates totam.    
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, atque tempore magnam tempora voluptas cum impedit laudantium earum amet porro nostrum, recusandae quas vero itaque rerum aliquam optio voluptates totam.    
                     </p>
                 </div>
             </article>
@@ -105,6 +102,8 @@
                     <img src="./images/ppa-1.jpg" loading="lazy">
                 </div>
                 <div class="course__info">
+                    <p class="text-primary">KEGIATAN</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
                     <a href="#">
                         <h4>Dampak Polusi pada Kesehatan</h4>
                     </a>

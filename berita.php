@@ -8,7 +8,7 @@
     <title>IDI Cab. Banjarmasin</title>
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/kontak.css">
+    <link rel="stylesheet" href="./css/tentang.css">
 
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./images/logo-icon.png">
@@ -63,57 +63,60 @@
     </nav>
     <!-- END OF NAVBAR -->
 
-    <section class="contact">
-        <div class="container contact__container">
-            <aside class="contact__aside">
-                <div class="aside__image">
-                    <img src="./images/contact-us.jpg">
+    <section class="courses">
+        <div class="container courses__container">
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/coass-1.jpg" loading="lazy">
                 </div>
-                <h2>Kontak Kami</h2>
-                <p>
-                    Kami menghargai setiap pertanyaan, komentar, atau permintaan informasi dari Anda. Untuk itu, jangan ragu untuk menghubungi kami. Kami dengan senang hati akan membantu dan merespons dengan segera. Terima kasih atas perhatian Anda.
-                </p>
-                <ul class="contact__details">
-                    <li>
-                        <i class="uil uil-phone-times"></i>
-                        <h5>(0811) 515-876</h5>
-                    </li>
-                    <li>
-                        <i class="uil uil-envelope"></i>
-                        <h5>cabangbanjarmasinidi@gmail.com</h5>
-                    </li>
-                    <li>
-                        <i class="uil uil-location-point"></i>
-                        <h5>IDI Banjarmasin</h5>
-                    </li>
-                </ul>
-                <ul class="contact__socials">
-                    <li>
-                        <a href="https://facebook.com"><i class="uil uil-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com"><i class="uil uil-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com"><i class="uil uil-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
-                    </li>
-                </ul>
-            </aside>
+                <div class="course__info">
+                    <p class="text-primary">BERITA</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
+                    <a href="#">
+                        <h4>Epidemi Global dan Tantangan Kesehatan Masyarakat</h4>
+                    </a>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptas odio corrupti esse iusto reiciendis dolore est recusandae quae nemo vel repellat, sint aspernatur ipsam eligendi quod odit, rem consequatur?
+                    </p>
+                </div>
+            </article>
 
-            <form class="contact__form">
-                <div class="form__name">
-                    <input type="text" name="First Name" placeholder="Nama Depan" required>
-                    <input type="text" name="Last Name" placeholder="Nama Belakang" required>
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/ppds-1.jpg" loading="lazy">
                 </div>
-                <input type="email" name="Email Adress" placeholder="Email" required>
-                <textarea name="Message" rows="7" placeholder="Tulis Pesan" required></textarea>
-                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-            </form>
+                <div class="course__info">
+                    <p class="text-primary">BERITA</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
+                    <a href="#">
+                        <h4>Donor Darah Rutin Dokter Indonesia</h4>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, atque tempore magnam tempora voluptas cum impedit laudantium earum amet porro nostrum, recusandae quas vero itaque rerum aliquam optio voluptates totam.    
+                    </p>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="./images/ppa-1.jpg" loading="lazy">
+                </div>
+                <div class="course__info">
+                    <p class="text-primary">BERITA</p>
+                    <p class="text-muted">Publikasi 01-01-2024</p>
+                    <a href="#">
+                        <h4>Dampak Polusi pada Kesehatan</h4>
+                    </a>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus reiciendis, libero, quod facilis sed amet temporibus saepe aut aperiam maxime aspernatur, dolorum omnis inventore veritatis. Sit quas voluptatibus numquam quaerat.
+                    </p>
+                </div>
+            </article>
         </div>
     </section>
+    <!-- END OF COURSE -->
+
+
     <footer>
         <div class="container footer__container">
             <div class="footer__1">
