@@ -59,6 +59,7 @@ section {
 
 section h2 {
     text-align: center;
+    font-size: 2.3rem;
     margin-bottom: 4rem;
 }
 
@@ -71,8 +72,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.3rem;
-    text-align: center;
+    font-size: 2rem;
 }
 
 h3 {
@@ -260,6 +260,101 @@ header {
      margin-bottom: 2rem;
 }
 
+/* === GALERI === */
+
+.gallery {
+    margin-top: 2rem;
+    padding: 100px 0;
+}
+
+.gallery__container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 0;
+}
+
+
+.gallery__container-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.gallery .gallery-item {
+    margin-top: 0.5rem;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 16 / 9; /* Proporsi landscape 16:9 */
+}
+
+.gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.gallery .gallery-item:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+    top: 0;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.gallery .gallery-item a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.gallery .gallery-item h3 {
+    position: absolute;
+    z-index: 5;
+    bottom: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    transition: all .3s ease;
+    padding: 30px;
+    font-family: "Source Sans Pro", sans-serif;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+}
+
+.gallery .gallery-item p {
+    position: absolute;
+    z-index: 5;
+    bottom: 20px;
+    color: #fff;
+    font-weight: normal;
+    opacity: 0;
+    transition: all .3s ease;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 16px;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+}
+
+.gallery .gallery-item:hover:before {
+    opacity: 1;
+}
+
+.gallery .gallery-item:hover h3, .gallery .gallery-item:hover p {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+
 /* === CATEGORIES / PERSYARATAN === */
 .categories {
     background-color: var(--color-white);
@@ -437,6 +532,7 @@ header {
 }
 
 .testimonial {
+    background: var(--color-white);
     padding-top: 2rem;
 }
 
@@ -660,6 +756,11 @@ footer ul li a:hover {
         border-radius: 20px; /* Menyesuaikan dengan border-radius dropdown */
     }
 
+    .gallery__container-group {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
     /* === CATEGORIES / PERSYARATAN === */
     .categories {
         height: auto;
@@ -738,7 +839,11 @@ footer ul li a:hover {
     .header__left p {
         margin-bottom: 1.3rem;
     }
-    
+
+    .gallery__container-group {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
     /* === CATEGORIES === */
     .categories__right {
