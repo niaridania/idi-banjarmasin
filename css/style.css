@@ -151,8 +151,9 @@ nav {
 /* change navbar styles on scroll using javascript */
 .window-scroll {
     /* efect glassmorphin */
-    background: liner-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.));
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
     backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem); /* untuk kompatibilitas Safari di iOS */
     /* background: var(--color-white); */
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 }
@@ -661,38 +662,42 @@ footer ul li a:hover {
         position: fixed; /* Tetap fixed agar tidak hilang saat scroll */
         top: 0rem;
         right: 0;
-        width: calc(100vw);
+        width: 60%;
         height: calc(100vh);
         background: var(--color-white);
         backdrop-filter: blur(10px); /* Blur untuk glassmorphism */
         -webkit-backdrop-filter: blur(10px); /* Blur untuk browser berbasis WebKit */
         border: 1px solid rgba(255, 255, 255, 0.3); /* Border semi-transparan */
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Shadow untuk memperkuat efek kaca */
-        border-radius: 60px 0 0 0;
+        border-radius: 0;
         display: none;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 0.2rem;
-        z-index: 999;
+        padding: 0rem 0.2rem; /* Kurangi padding atas */
         overflow-y: auto; /* Pastikan dropdown bisa di-scroll jika isinya melebihi ketinggian layar */
+        overflow-x: hidden; /* Pastikan tidak ada elemen yang melampaui lebar layar */
+        z-index: 999;
     }
 
     .nav__menu li {
-        top: 2rem;
         position: relative; /* Pastikan posisi relatif untuk dropdown */
         margin-top: 0.5rem;
-        margin-left: 2rem;
+        margin-left: 0.5rem; /* Kurangi margin untuk tampilan yang lebih pas */
+        margin-bottom: 0.5rem; /* Kurangi margin untuk tampilan yang lebih pas */
     }
 
     .nav__menu a {
         color: var(--color-black);
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
+        font-size: 0.85rem; /* Kurangi sedikit ukuran font */
+        padding: 0.4rem 0.8rem; /* Kurangi padding agar tidak terlalu besar */
         display: block;
         transition: color 0.3s ease, background 0.3s ease;
         border-radius: 8px; /* Agar hover menyesuaikan dengan border-radius */
+        word-wrap: break-word; /* Pastikan kata panjang terpecah di batas layar */
+        white-space: normal; /* Pastikan tidak ada teks yang melewati layar */
     }
+
 
     /* Hover effect */
     .nav__menu a:hover {
@@ -729,6 +734,7 @@ footer ul li a:hover {
         transform: translateY(20px);
         transition: opacity 0.3s ease, transform 0.3s ease;
         overflow: hidden; /* Tambahkan ini untuk memastikan hover sesuai dengan border-radius */
+        overflow-x: hidden; /* Pastikan tidak ada elemen yang melampaui lebar layar */
     }
 
     /* Menampilkan dropdown saat hover */
@@ -809,20 +815,20 @@ footer ul li a:hover {
     .nav__menu {
         right: 0;
         width: 15rem;
-        height: 120vh;
+        height: 100vh;
         display: none;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
-
+    
     .nav__menu li {
         line-height: 0.5;
     }
 
     .nav__menu a {
         color: var(--color-black);
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     /* === HEADER === */
